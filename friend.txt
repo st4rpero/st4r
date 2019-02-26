@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+class raja{
+private :
+	void display1()
+	{
+		cout << "private class";
+	}
+public:
+	void display2()
+	{
+		cout << "public class";
+	}
+	friend void rajaji(raja r1);
+};
+
+void rajaji(raja r1)
+{
+	r1.display1();
+	cout << "friend is called";
+}
+void main()
+{
+	raja r1;
+	
+    r1.display2();
+	rajaji(r1);
+}

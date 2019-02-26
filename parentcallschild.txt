@@ -1,0 +1,34 @@
+#include<iostream>
+#include<string>
+using namespace std;
+class cust
+{
+	int prvt;
+	string name;
+public:
+	cust() :prvt(9), name("amit")
+	{
+		cout << endl << prvt << endl << name;
+	}
+};
+class child :public cust
+{
+
+	int gta;
+	float ah;
+public:
+	child():gta(4),ah(9.0)
+	{
+	}
+	void getdetails()
+	{
+		cout << gta << endl << ah << endl;
+	}
+};
+int main()
+{
+	system("cls");
+	cust *w1 = new cust();
+	child *ptr = (child*)w1;
+	ptr->getdetails();
+}

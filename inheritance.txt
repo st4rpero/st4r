@@ -1,0 +1,50 @@
+#include <iostream>
+#include <string>
+using namespace std;
+class informationdiary {
+public:
+	int regno;
+	string name;
+	int phno;
+};
+class teacher : public informationdiary {
+public:
+	
+	void getdetail(int idno, string name, int phone)
+	{
+		regno = idno;
+		this->name = name;
+		phno = phone;
+	
+	}
+	void display()
+	{
+		cout << regno <<endl<< name<< endl<< phno;
+	}
+	
+};
+class student : public teacher {
+public :
+	void display2()
+	{
+	cout <<endl << "child is called";
+	}
+};
+
+void main()
+{
+	teacher *t2 = new teacher();
+	t2->getdetail(21, "mohan", 23);
+	t2->display();
+	cout << endl;
+	cout << endl;
+	teacher t1;
+	t1.getdetail(123,"Akash",9792);
+	t1.display();
+	student s1;
+	s1.display2();
+	cout << endl;
+	cout << endl;
+	s1.getdetail(133, "Akash ker singh", 35);
+	s1.display();
+}

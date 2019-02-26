@@ -1,0 +1,47 @@
+#include <iostream>
+using namespace std;
+class MyClass
+{
+private:
+	int a;
+	int b;
+	
+public:
+void  setdata(int a, int b)
+	{
+		this->a = a;
+		this->b = b;
+
+		
+	}
+void showdata()
+{
+	cout << a;
+	cout << b;
+}
+
+MyClass operator+(MyClass m)
+{
+	MyClass temp;
+	temp.a = a + m.a;
+	temp.b = b + m.b;
+	return (temp);
+}
+	
+
+};
+void main()
+
+{
+	MyClass m1,m2,m3;
+	m1.setdata(10, 20);
+	m2.setdata(20, 40);
+    m3 = m1+m2;
+    m3.showdata();
+
+
+	
+
+
+
+}

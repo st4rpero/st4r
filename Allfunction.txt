@@ -1,0 +1,70 @@
+#include <iostream>
+using namespace std;
+class calc {
+public:
+	int x;
+	int y;
+
+	void add()
+	{
+		cout << "Enter first number";
+		cin >> x;
+		cout << "Enter second number";
+		cin >> y;
+		cout << x + y<< endl;
+	}
+	
+	void sub(int a, int b)
+{
+	x = a; 
+		y = b;
+		cout << a - b<< endl;
+	}
+	int mul(int a, int b)
+	{
+	x = a; y = b;
+	int res;
+	return res = x * y;
+	}
+	void div1(int a,int b);
+	int add(int a,int b);
+
+};
+
+void calc::div1(int a,int b)
+{
+	x = a; y = b;
+	int resu = x / y;
+	cout << resu;
+}
+
+int calc::add(int a, int b){
+	x = a;
+	y = b;
+	int sum;
+	return sum = x + y;
+}
+
+
+void main()
+{
+	calc c1;
+	int a; int b;
+	cout << "Enter first number of main ";
+	cin >> a;
+	cout << "Enter second number of main ";
+cin >> b;
+int r1;
+int r3;
+	c1.add();
+	c1.sub(a,b);
+	r1=c1.mul(a,b);
+	cout << r1;
+	cout << endl;
+	c1.div1(a,b);
+	cout << endl;
+	r3=c1.add(a,b);
+
+	cout <<  r3;
+
+}
