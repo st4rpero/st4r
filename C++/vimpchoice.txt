@@ -1,0 +1,11 @@
+do {
+
+cout<<"Do you want to repeat the operation Y/N: ";
+		cin>>ch;
+		
+
+
+	} while (ch == 'y' || ch == 'Y');
+
+	sum = sum + x + y;
+}

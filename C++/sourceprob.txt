@@ -1,0 +1,19 @@
+#include<iostream>
+#include<string>
+#include "Header.h";
+
+
+
+
+int main()
+{
+	int a, b, result;
+		char choice;
+    a = getinputdatatext("Enter 1st number");
+	b = getinputdatatext("Enter 2nd number");
+	cout << "Enter choice";
+	
+	choiceismylife('+');
+	
+	return 0;
+}

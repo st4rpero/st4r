@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+class kenny
+{
+public :
+	kenny()
+	{
+		cout << "i love g2";
+	}
+};
+void main()
+{
+
+	kenny();
+	
+} 

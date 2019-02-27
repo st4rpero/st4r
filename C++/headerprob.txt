@@ -1,0 +1,62 @@
+#pragma once
+#include<iostream>
+#include<string>
+using namespace std;
+
+int add(int x, int y)
+{
+	return x + y;
+}
+int sub(int x, int y)
+{
+	return  x - y;
+}
+int mul(int x, int y)
+{
+	return x * y;
+}
+int div1(int x, int y)
+{
+	return x / y;
+}
+
+int getinputdatatext(string str)
+{
+	cout << str << endl;
+	int newval;
+	cin >> newval;
+	return newval;
+}
+
+
+void choiceismylife(char ch[])
+{
+	int result;
+	char choice; 
+	ch = choice;
+	int a, b;
+	if (choice == '+')
+	{
+		result = add(a, b);
+		cout << result;
+	}
+	else if (choice == '-')
+	{
+		result = sub(a, b);
+		cout << result;
+	}
+	else if (choice == '*')
+	{
+		result = mul(a, b);
+		cout << result;
+	}
+	else if (choice == '/')
+	{
+		result = div1(a, b);
+		cout << result;
+	}
+	else
+	{
+		cout << "NO response";
+	}
+}

@@ -1,0 +1,40 @@
+#include <iostream>
+using namespace std;
+class bodyy {
+public  :
+	int rollno;
+	string name;
+
+	virtual void display() = 0;
+};
+class jakzs:public bodyy
+{
+public:
+	void display()
+	{
+		cout << "i am in g2";
+	}
+	jakzs()
+	{
+		cout << "kenny is where";
+	}
+
+};
+class shoxie :public bodyy
+{
+public:
+	shoxie()
+		{
+		cout << "i am igl";
+		}
+	void display()
+	{
+		cout << "i am in g2";
+	}
+	};
+void main()
+{
+	jakzs j1;
+	j1.display();
+	shoxie();
+}

@@ -1,0 +1,25 @@
+#include<iostream>
+#include<string>
+using namespace std;
+void main()
+{
+	int x=9;
+	try
+	{
+		if (x == 10)
+			throw 10;
+		else
+			throw 20;
+	}
+	catch(int e)
+	{
+		cout << "number is not same" << e;
+	}
+	catch(string e)
+	{
+		cout << "error" << e;
+	}
+
+
+
+}

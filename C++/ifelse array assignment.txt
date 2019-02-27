@@ -1,0 +1,113 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+class billing {
+public:
+	int empid;
+	string name;
+
+	void getch()
+	{
+		cout << "empid";
+		cin >> empid;
+		cout << "empname";
+		cin >> name;
+		}
+
+	void getdisplay()
+	{
+		cout << empid;
+		cout << name;
+	}
+
+};
+
+
+int main() {
+
+	int choice;
+	cout << "Enter your choice";
+	cin >> choice;
+
+	if (choice == 1)
+	{
+
+		billing b1[1];
+		int i;
+		for (i = 0; i < 1; i++)
+		{
+			b1[i].getch();
+		}
+		for (i = 0; i < 1; i++)
+		{
+			b1[i].getdisplay();
+		}
+	}
+
+	else if (choice == 2)
+	{
+
+		billing b1[2];
+		int i;
+		for (i = 0; i < 2; i++)
+		{
+			b1[i].getch();
+		}
+		for (i = 0; i < 2; i++)
+		{
+			b1[i].getdisplay();
+		}
+	}
+
+	else if (choice == 3)
+	{
+
+		billing b1[3];
+		int i;
+		for (i = 0; i < 3; i++)
+		{
+			b1[i].getch();
+		}
+		for (i = 0; i < 3; i++)
+		{
+			b1[i].getdisplay();
+		}
+	}
+
+	else if (choice == 4)
+	{
+
+		billing b1[4];
+		int i;
+		for (i = 0; i < 4; i++)
+		{
+			b1[i].getch();
+		}
+		for (i = 0; i < 4; i++)
+		{
+			b1[i].getdisplay();
+		}
+	}
+
+	else if (choice == 5)
+	{
+
+		billing b1[5];
+		int i;
+		for (i = 0; i < 5; i++)
+		{
+			b1[i].getch();
+		}
+		for (i = 0; i < 5; i++)
+		{
+			b1[i].getdisplay();
+		}
+	}
+	else
+	{
+		cout << "No brother no";
+	}
+
+	return 0;
+}

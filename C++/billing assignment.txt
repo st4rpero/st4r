@@ -1,0 +1,112 @@
+#include<iostream>
+using namespace std;
+void main()
+{
+
+
+
+	int monitor = 100;
+	int mouse = 50;
+	int keyboard = 20;
+	int cpu = 200;
+	int total = 0;
+	int raja;
+	int avg;
+	int tavg = 0;
+
+	int n1, n2, n3, n4;
+	int b1=0, b2=0, b3=0, b4=0;
+	int t1, t2, t3, t4;
+
+
+	char ch;
+	do {
+
+		
+
+		cout << "Price of monitor is 100 " << endl;
+		cout << "Price of mouse is 50 " << endl;
+		cout << "Price of keyboard is 20 " << endl;
+		cout << "Price of cpu is 100 " << endl;
+
+		cout << endl;
+
+		cout << "Enter the no of mouse you want = ";
+		cin >> n2;
+		t1 = n2 * mouse;
+
+
+
+		cout << "Enter the no of keyword you want = ";
+		cin >> n3;
+		t2 = n3 * keyboard;
+
+		cout << "Enter the no of cpu you want = ";
+		cin >> n4;
+		t3 = n4 * cpu;
+
+		cout << "Enter the no of monitors you want = ";
+		cin >> n1;
+		t4 = n1 * monitor;
+
+		cout << endl;
+		cout << endl;
+
+
+		cout << "Total amout is = ";
+
+		cout << endl;
+		cout << endl;
+
+
+		cout << "Mouse =" << t1 << endl;
+		cout << "monotor=" << t4 << endl;
+		cout << "cpu=" << t3 << endl;
+		cout << "keyboard=" << t2 << endl;
+
+		cout << endl;
+		cout << endl;
+
+		cout << "total for this purchase = ";
+		raja = t1 + t2 + t3 + t4;
+		cout << raja;
+
+		cout <<endl;
+		
+		cout << endl;
+		
+
+
+		cout << "Your cpmplete bill is = ";
+		total = t1 + t2 + t3 + t4+total;
+		cout << total << endl;
+		cout << endl;
+		cout << endl;
+		cout << "average no of componets sold in this selling = ";
+		b1 = b1 + n1;
+		b2 = b2 + n2;
+		b3 = b3 + n3;
+		b4 = b4 + n4;
+		avg = (b1 + b2 + b3 + b4) / 4;
+		cout << avg;
+		cout << endl;
+		cout << endl;
+		cout << "average no of componets sold in total selling = ";
+		tavg = tavg + avg;
+		cout << tavg;
+
+		cout << endl;
+		cout << endl;
+
+		cout << "Do you want to repeat the operation Y/N: ";
+		cin >> ch;
+
+	}
+
+
+
+	while (ch == 'y' || ch == 'Y');
+
+
+
+}

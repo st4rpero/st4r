@@ -1,0 +1,8 @@
+#includeiostream
+using namespace std;
+void main()
+{
+	cout  size od int is -  sizeof(int);
+	cout  size od int is -   sizeof(float);
+	cout  size od int is -   sizeof(double);
+

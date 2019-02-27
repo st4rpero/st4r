@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+void main()
+{
+	cout << "enter 1st number";
+	int a=10;
+	cout << a<< endl;
+
+	cout << "enter 2nd number";
+	int b=20;
+	cout <<b << endl;
+
+	int temp;
+
+	temp = a;
+	a = b;
+	b = temp;
+
+	cout << "after swapping number interchange";
+
+	cout << "new value of a";
+	cout << a<< endl;
+	cout << "new value of b";
+	cout << b;
+
+
+}

@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+void main()
+{
+	int a;
+	float b;
+	double c;
+
+	cout << "enter integer";
+	cin >> a;
+	cout << "enter float";
+	cin >> b;
+	cout << "enter double";
+	cin >> c;
+
+	int sum1 = a + b;
+	float sum2 = a + b;
+	double sum3 = a + b;
+
+	int sum4 = c + b;
+	float sum5 = c + b;
+	double sum6 = c + b;
+
+	int sum7 = c + a;
+	float sum8 = c + a;
+	double sum9 = c + a;
+
+	cout << sum1 << endl << sum2 << endl << sum3 << endl << sum4 << endl << sum5 << endl << sum6 << endl << sum7 << endl << sum8 << endl << sum9;
+
+}

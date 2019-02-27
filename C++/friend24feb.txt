@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+class ismybirthright
+{
+private :
+	void iamprivate()
+	{
+		cout << "i am private"<< endl;
+	}
+public :
+	void iampublic()
+	{
+		cout << "i ma public"<< endl;
+		
+	}
+
+	friend void iamyourfriend(ismybirthright ibr);
+
+};
+
+void iamyourfriend(ismybirthright ibr)
+{
+	ibr.iamprivate();
+}
+
+void main()
+{
+	ismybirthright ibr;
+	iamyourfriend(ibr);	
+	ibr.iampublic();
+
+}

@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+class shoxie {
+public:
+	int a;
+	static int b;
+};
+
+int shoxie :: b = 0;
+
+void main()
+{
+	shoxie s1;
+	s1.a = 10;
+	cout << s1.a;
+	shoxie::b = 20;
+	cout << shoxie::b;
+
+}

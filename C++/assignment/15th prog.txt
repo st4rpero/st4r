@@ -1,0 +1,42 @@
+#include <iostream>
+#include <string>
+using namespace std;
+void main()
+{
+	cout << "Enter first name";
+	string fname;
+	cin >> fname;
+
+
+
+	cout << "Enter last name";
+	string lname;
+	cin >> lname;
+
+	cout << fname;
+	cout << " ";
+	cout << lname;
+	cout << endl;
+
+	for (int i = lname.length(); i >= 0; i--)
+	{
+		char ch;
+		ch = lname[i];
+		cout << ch;
+
+	}
+
+	for (int i = fname.length(); i >= 0; i--)
+	{
+		char ch;
+		ch = fname[i];
+		cout << ch;
+
+	}
+
+
+
+
+}
+
+
